@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요, HTML5, CSS3, JavaScript!</h1>
+    <button id="greetButton">인사하기</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('greetButton').addEventListener('click', function() {
+            document.getElementById('message').textContent = '안녕하세요! 웹 개발을 즐기세요!';
+        });
+    </script>
+</body>
+</html>
